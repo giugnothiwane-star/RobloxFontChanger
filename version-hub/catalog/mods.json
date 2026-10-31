@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "mods": [
+    {
+      "id": "fx-night-tint",
+      "name": "Teinte nocturne",
+      "version": "1.0.0",
+      "category": "graphics",
+      "description": "Assombrit et refroidit l'image pour jouer le soir.",
+      "author": "Subway Version Hub",
+      "license": "MIT",
+      "compatibility": [
+        {
+          "engineId": "subway-lab",
+          "range": "^1.0.0"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [
+        {
+          "id": "fx-grayscale",
+          "reason": "Les deux mods réécrivent la saturation : le niveau de gris annulerait la teinte."
+        }
+      ],
+      "assets": [],
+      "permissions": [
+        "render.filter"
+      ],
+      "effects": [
+        {
+          "type": "cssFilter",
+          "brightness": 0.8,
+          "saturate": 0.85,
+          "hueRotate": -12
+        }
+      ],
+      "experimental": false,
+      "checksum": ""
+    },
+    {
+      "id": "fx-high-contrast",
+      "name": "Contraste élevé",
+      "version": "1.0.0",
+      "category": "graphics",
+      "description": "Augmente le contraste pour mieux distinguer les obstacles.",
+      "author": "Subway Version Hub",
+      "license": "MIT",
+      "compatibility": [
+        {
+          "engineId": "subway-lab",
+          "range": "^1.0.0"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "assets": [],
+      "permissions": [
+        "render.filter"
+      ],
+      "effects": [
+        {
+          "type": "cssFilter",
+          "contrast": 1.35,
+          "saturate": 1.1
+        }
+      ],
+      "experimental": false,
+      "checksum": ""
+    },
+    {
+      "id": "fx-grayscale",
+      "name": "Niveaux de gris",
+      "version": "1.0.0",
+      "category": "graphics",
+      "description": "Rendu monochrome.",
+      "author": "Subway Version Hub",
+      "license": "MIT",
+      "compatibility": [
+        {
+          "engineId": "subway-lab",
+          "range": "^1.0.0"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [
+        {
+          "id": "fx-night-tint",
+          "reason": "Les deux mods réécrivent la saturation."
+        }
+      ],
+      "assets": [],
+      "permissions": [
+        "render.filter"
+      ],
+      "effects": [
+        {
+          "type": "cssFilter",
+          "grayscale": 1
+        }
+      ],
+      "experimental": false,
+      "checksum": ""
+    },
+    {
+      "id": "fx-retro-scanlines",
+      "name": "Lignes rétro",
+      "version": "1.0.0",
+      "category": "interface",
+      "description": "Superpose des lignes de balayage façon écran cathodique.",
+      "author": "Subway Version Hub",
+      "license": "MIT",
+      "compatibility": [
+        {
+          "engineId": "subway-lab",
+          "range": "^1.0.0"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "assets": [],
+      "permissions": [
+        "render.overlay"
+      ],
+      "effects": [
+        {
+          "type": "overlay",
+          "pattern": "scanlines",
+          "opacity": 0.25
+        }
+      ],
+      "experimental": false,
+      "checksum": ""
+    },
+    {
+      "id": "fx-vignette",
+      "name": "Vignette",
+      "version": "1.0.0",
+      "category": "graphics",
+      "description": "Assombrit les bords de l'écran.",
+      "author": "Subway Version Hub",
+      "license": "MIT",
+      "compatibility": [
+        {
+          "engineId": "subway-lab",
+          "range": "^1.0.0"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "assets": [],
+      "permissions": [
+        "render.overlay"
+      ],
+      "effects": [
+        {
+          "type": "overlay",
+          "pattern": "vignette",
+          "opacity": 0.45
+        }
+      ],
+      "experimental": false,
+      "checksum": ""
+    },
+    {
+      "id": "ui-cinema-frame",
+      "name": "Cadre cinéma",
+      "version": "1.0.0",
+      "category": "customization",
+      "description": "Bandes noires haut/bas au ratio 21:9.",
+      "author": "Subway Version Hub",
+      "license": "MIT",
+      "compatibility": [
+        {
+          "engineId": "subway-lab",
+          "range": "^1.0.0"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [
+        {
+          "id": "fx-vignette",
+          "reason": "Le cadre masque la zone où la vignette agit ; l'effet combiné est illisible sur mobile."
+        }
+      ],
+      "assets": [],
+      "permissions": [
+        "render.overlay"
+      ],
+      "effects": [
+        {
+          "type": "overlay",
+          "pattern": "letterbox",
+          "opacity": 1
+        }
+      ],
+      "experimental": false,
+      "checksum": ""
+    },
+    {
+      "id": "fx-retro-pack",
+      "name": "Pack rétro",
+      "version": "1.0.0",
+      "category": "experimental",
+      "description": "Combine Lignes rétro + filtre chaud. Requiert le mod Lignes rétro.",
+      "author": "Subway Version Hub",
+      "license": "MIT",
+      "compatibility": [
+        {
+          "engineId": "subway-lab",
+          "range": "^1.0.0"
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "fx-retro-scanlines",
+          "range": "^1.0.0"
+        }
+      ],
+      "conflicts": [],
+      "assets": [],
+      "permissions": [
+        "render.filter"
+      ],
+      "effects": [
+        {
+          "type": "cssFilter",
+          "saturate": 1.2,
+          "hueRotate": 8,
+          "contrast": 1.1
+        }
+      ],
+      "experimental": true,
+      "checksum": ""
+    },
+    {
+      "id": "audio-engine-mute",
+      "name": "Sourdine du moteur",
+      "version": "1.0.0",
+      "category": "audio",
+      "description": "Coupe le son du moteur. Nécessite un moteur exposant un canal audio.",
+      "author": "Subway Version Hub",
+      "license": "MIT",
+      "compatibility": [
+        {
+          "engineId": "subway-lab",
+          "range": "^1.0.0"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "assets": [],
+      "permissions": [
+        "audio.volume"
+      ],
+      "effects": [
+        {
+          "type": "audio",
+          "volume": 0
+        }
+      ],
+      "experimental": false,
+      "checksum": ""
+    },
+    {
+      "id": "gameplay-lane-assist",
+      "name": "Assistance de voie",
+      "version": "1.0.0",
+      "category": "gameplay",
+      "description": "Assistance locale au changement de voie. Nécessite un point d'extension gameplay déclaré par le moteur.",
+      "author": "Subway Version Hub",
+      "license": "MIT",
+      "compatibility": [
+        {
+          "engineId": "subway-lab",
+          "range": "^1.0.0"
+        }
+      ],
+      "dependencies": [],
+      "conflicts": [],
+      "assets": [],
+      "permissions": [
+        "gameplay.local"
+      ],
+      "effects": [
+        {
+          "type": "engineParam",
+          "key": "laneAssist",
+          "value": true
+        }
+      ],
+      "experimental": true,
+      "checksum": ""
+    }
+  ]
+}

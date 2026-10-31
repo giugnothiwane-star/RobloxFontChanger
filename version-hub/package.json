@@ -1,0 +1,40 @@
+{
+  "name": "subway-version-hub",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Launcher web de versions et de mods. Seules les builds présentes, autorisées et testées sont jouables.",
+  "scripts": {
+    "sync:engines": "node scripts/sync-engines.mjs",
+    "predev": "npm run sync:engines",
+    "dev": "vite",
+    "prebuild": "npm run sync:engines",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "node tests-e2e/smoke.mjs"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.0",
+    "zod": "^3.24.2",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^22.20.5",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.6",
+    "@vitejs/plugin-react": "^4.4.1",
+    "autoprefixer": "^10.4.21",
+    "jsdom": "^26.0.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.6",
+    "vitest": "^3.1.1"
+  }
+}

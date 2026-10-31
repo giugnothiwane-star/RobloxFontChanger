@@ -28,6 +28,16 @@ Documentation, compilation, tests et rapport de vérification : [`ultimate-auto-
 
 ```bash
 cd ultimate-auto-builder && ./gradlew build   # JAR dans build/libs/
+## Subway Version Hub — launcher de versions et de mods
+
+Launcher web (React + TypeScript + Vite + Tailwind + Zod + Zustand) : catalogue d'éditions filtrable, gestionnaire de mods déclaratifs (dépendances, conflits, permissions, sommes SHA-256), lecteur avec vérification d'intégrité de chaque fichier avant lancement. Seul **Subway Lab Infinite** (prototype original du dépôt) est jouable ; les éditions officielles sont référencées sans ressources et marquées « Non disponible ».
+
+Documentation, architecture et limites : [`version-hub/README.md`](version-hub/README.md).
+
+```bash
+cd version-hub && npm install && npm run dev   # http://localhost:5190
+```
+
 ## Subway Surfers Infinite Lab
 
 Prototype autonome jouable sur ordinateur et Android (navigateur) inspiré de Subway Surfers : pièces et clés de test illimitées, ralenti 0,10× → 1,00× à chaud, enregistrement intégral d'une run et rejeu déterministe vérifié (80 tests + test navigateur), boutique, personnages, hoverboards, jetpack et toits de trains.
