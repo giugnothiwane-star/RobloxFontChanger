@@ -353,9 +353,35 @@ export function bootstrap() {
     if (lab.recorder.active) lab.recorder.flushDraft();
   });
 
+  installEmbedBridge(lab);
+
   // Point d'accès pour le débogage et les tests E2E (lecture/pilotage, aucune donnée sensible).
   /** @type {any} */ (window).__lab = lab;
   return lab;
 }
 
 /** @typedef {import('./UiContext.js').UiContext['toast']} UiToast */
+
+/**
+ * Pont d'intégration pour un launcher parent (Subway Version Hub).
+ * Inactif hors iframe. N'accepte que les messages de la même origine : un parent
+ * tiers ne peut pas piloter le laboratoire. Protocole versionné et minimal.
+ * @param {any} lab
+ */
+function installEmbedBridge(lab) {
+  if (window.parent === window) return;
+  const origin = window.location.origin;
+  const post = (msg) => window.parent.postMessage({ source: 'subway-lab', protocol: 1, ...msg }, origin);
+  window.addEventListener('message', (ev) => {
+    if (ev.origin !== origin || ev.source !== window.parent) return;
+    const d = ev.data;
+    if (!d || typeof d !== 'object' || d.target !== 'subway-lab' || typeof d.type !== 'string') return;
+    switch (d.type) {
+      case 'ping': post({ type: 'ready', state: lab.fsm.state }); break;
+      case 'pause': post({ type: 'paused', ok: lab.pause() }); break;
+      case 'resume': post({ type: 'resumed', ok: lab.resume() }); break;
+      default: post({ type: 'error', reason: `Commande inconnue : ${d.type}` });
+    }
+  });
+  post({ type: 'ready', state: lab.fsm.state });
+}

@@ -1,0 +1,6 @@
+node_modules
+dist
+public/engines
+public/manifests
+test-results
+tests-e2e/screens

@@ -1,0 +1,515 @@
+{
+  "schemaVersion": 1,
+  "versions": [
+    {
+      "id": "subway-lab-infinite",
+      "title": "Subway Lab Infinite (prototype original)",
+      "kind": "original-prototype",
+      "year": 2026,
+      "releaseDate": "2026-10-31",
+      "dateConfidence": "verified",
+      "city": "Laboratoire",
+      "description": "Runner à trois voies original développé dans ce dépôt (subway-lab) : Canvas 2D pseudo-3D, ralenti 0,10×–1,00×, enregistrement et rejeu déterministe. Ce n'est PAS Subway Surfers : aucune ressource officielle n'est utilisée.",
+      "engineId": "subway-lab",
+      "engineVersion": "1.0.0",
+      "assets": [],
+      "assetIndex": "engines/subway-lab/integrity.json",
+      "supportedMods": [
+        "fx-night-tint",
+        "fx-high-contrast",
+        "fx-retro-scanlines",
+        "fx-vignette",
+        "fx-grayscale",
+        "ui-cinema-frame",
+        "fx-retro-pack",
+        "audio-engine-mute",
+        "gameplay-lane-assist"
+      ],
+      "compatibility": {
+        "mobile": true,
+        "desktop": true,
+        "touch": true,
+        "keyboard": true
+      },
+      "status": "playable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#ff4f8b",
+        "to": "#ffcf3f",
+        "label": "LAB"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-original-2012",
+      "title": "Subway Surfers (version originale)",
+      "kind": "official",
+      "year": 2012,
+      "releaseDate": "2012-05-24",
+      "dateConfidence": "verified",
+      "city": "Subway (origine)",
+      "description": "Version de lancement développée par Kiloo et SYBO. Référencée à titre documentaire.",
+      "engineId": "unity-android-native",
+      "engineVersion": "0.0.0",
+      "assets": [],
+      "assetIndex": null,
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": false,
+        "desktop": false,
+        "touch": false,
+        "keyboard": false
+      },
+      "status": "unavailable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Build Android native (Unity) : un APK ne s'exécute pas dans un navigateur.",
+        "Aucune build web ni ressource autorisée n'est fournie à ce launcher."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#0ea5e9",
+        "to": "#1e3a8a",
+        "label": "Subway (origine)"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-wt-new-york-2013",
+      "title": "World Tour : New York",
+      "kind": "official",
+      "year": 2013,
+      "releaseDate": null,
+      "dateConfidence": "community",
+      "city": "New York",
+      "description": "Première étape du World Tour (janvier 2013 selon le wiki communautaire).",
+      "engineId": "unity-android-native",
+      "engineVersion": "0.0.0",
+      "assets": [],
+      "assetIndex": null,
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": false,
+        "desktop": false,
+        "touch": false,
+        "keyboard": false
+      },
+      "status": "unavailable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Build Android native (Unity) : un APK ne s'exécute pas dans un navigateur.",
+        "Aucune build web ni ressource autorisée n'est fournie à ce launcher."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#22c55e",
+        "to": "#065f46",
+        "label": "New York"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-wt-rio-2013",
+      "title": "World Tour : Rio",
+      "kind": "official",
+      "year": 2013,
+      "releaseDate": null,
+      "dateConfidence": "community",
+      "city": "Rio de Janeiro",
+      "description": "Étape brésilienne du World Tour 2013 (date communautaire).",
+      "engineId": "unity-android-native",
+      "engineVersion": "0.0.0",
+      "assets": [],
+      "assetIndex": null,
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": false,
+        "desktop": false,
+        "touch": false,
+        "keyboard": false
+      },
+      "status": "unavailable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Build Android native (Unity) : un APK ne s'exécute pas dans un navigateur.",
+        "Aucune build web ni ressource autorisée n'est fournie à ce launcher."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#f97316",
+        "to": "#7c2d12",
+        "label": "Rio de Janeiro"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-wt-rome-2013",
+      "title": "World Tour : Rome",
+      "kind": "official",
+      "year": 2013,
+      "releaseDate": null,
+      "dateConfidence": "community",
+      "city": "Rome",
+      "description": "Étape italienne du World Tour 2013 (date communautaire).",
+      "engineId": "unity-android-native",
+      "engineVersion": "0.0.0",
+      "assets": [],
+      "assetIndex": null,
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": false,
+        "desktop": false,
+        "touch": false,
+        "keyboard": false
+      },
+      "status": "unavailable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Build Android native (Unity) : un APK ne s'exécute pas dans un navigateur.",
+        "Aucune build web ni ressource autorisée n'est fournie à ce launcher."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#eab308",
+        "to": "#713f12",
+        "label": "Rome"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-wt-sydney-2013",
+      "title": "World Tour : Sydney",
+      "kind": "official",
+      "year": 2013,
+      "releaseDate": null,
+      "dateConfidence": "community",
+      "city": "Sydney",
+      "description": "Étape australienne du World Tour 2013 (date communautaire).",
+      "engineId": "unity-android-native",
+      "engineVersion": "0.0.0",
+      "assets": [],
+      "assetIndex": null,
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": false,
+        "desktop": false,
+        "touch": false,
+        "keyboard": false
+      },
+      "status": "unavailable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Build Android native (Unity) : un APK ne s'exécute pas dans un navigateur.",
+        "Aucune build web ni ressource autorisée n'est fournie à ce launcher."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#ec4899",
+        "to": "#701a75",
+        "label": "Sydney"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-wt-tokyo-2013",
+      "title": "World Tour : Tokyo",
+      "kind": "official",
+      "year": 2013,
+      "releaseDate": null,
+      "dateConfidence": "community",
+      "city": "Tokyo",
+      "description": "Étape japonaise du World Tour 2013 (date communautaire).",
+      "engineId": "unity-android-native",
+      "engineVersion": "0.0.0",
+      "assets": [],
+      "assetIndex": null,
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": false,
+        "desktop": false,
+        "touch": false,
+        "keyboard": false
+      },
+      "status": "unavailable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Build Android native (Unity) : un APK ne s'exécute pas dans un navigateur.",
+        "Aucune build web ni ressource autorisée n'est fournie à ce launcher."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#6366f1",
+        "to": "#1e1b4b",
+        "label": "Tokyo"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-wt-paris-2013",
+      "title": "World Tour : Paris",
+      "kind": "official",
+      "year": 2013,
+      "releaseDate": null,
+      "dateConfidence": "community",
+      "city": "Paris",
+      "description": "Étape française du World Tour 2013 (date communautaire).",
+      "engineId": "unity-android-native",
+      "engineVersion": "0.0.0",
+      "assets": [],
+      "assetIndex": null,
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": false,
+        "desktop": false,
+        "touch": false,
+        "keyboard": false
+      },
+      "status": "unavailable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Build Android native (Unity) : un APK ne s'exécute pas dans un navigateur.",
+        "Aucune build web ni ressource autorisée n'est fournie à ce launcher."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#ef4444",
+        "to": "#450a0a",
+        "label": "Paris"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-wt-london-2013",
+      "title": "World Tour : London",
+      "kind": "official",
+      "year": 2013,
+      "releaseDate": null,
+      "dateConfidence": "community",
+      "city": "Londres",
+      "description": "Étape britannique de fin 2013 (date communautaire).",
+      "engineId": "unity-android-native",
+      "engineVersion": "0.0.0",
+      "assets": [],
+      "assetIndex": null,
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": false,
+        "desktop": false,
+        "touch": false,
+        "keyboard": false
+      },
+      "status": "unavailable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Build Android native (Unity) : un APK ne s'exécute pas dans un navigateur.",
+        "Aucune build web ni ressource autorisée n'est fournie à ce launcher."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#14b8a6",
+        "to": "#134e4a",
+        "label": "Londres"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-wt-mumbai-2014",
+      "title": "World Tour : Mumbai",
+      "kind": "official",
+      "year": 2014,
+      "releaseDate": null,
+      "dateConfidence": "community",
+      "city": "Mumbai",
+      "description": "Étape indienne de janvier 2014 (date communautaire).",
+      "engineId": "unity-android-native",
+      "engineVersion": "0.0.0",
+      "assets": [],
+      "assetIndex": null,
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": false,
+        "desktop": false,
+        "touch": false,
+        "keyboard": false
+      },
+      "status": "unavailable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Build Android native (Unity) : un APK ne s'exécute pas dans un navigateur.",
+        "Aucune build web ni ressource autorisée n'est fournie à ce launcher."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#a855f7",
+        "to": "#3b0764",
+        "label": "Mumbai"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-wt-seoul-2014",
+      "title": "World Tour : Seoul",
+      "kind": "official",
+      "year": 2014,
+      "releaseDate": null,
+      "dateConfidence": "community",
+      "city": "Séoul",
+      "description": "Étape coréenne de 2014 (date communautaire).",
+      "engineId": "unity-android-native",
+      "engineVersion": "0.0.0",
+      "assets": [],
+      "assetIndex": null,
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": false,
+        "desktop": false,
+        "touch": false,
+        "keyboard": false
+      },
+      "status": "unavailable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Build Android native (Unity) : un APK ne s'exécute pas dans un navigateur.",
+        "Aucune build web ni ressource autorisée n'est fournie à ce launcher."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#84cc16",
+        "to": "#365314",
+        "label": "Séoul"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-wt-mexico-2014",
+      "title": "World Tour : Mexico",
+      "kind": "official",
+      "year": 2014,
+      "releaseDate": null,
+      "dateConfidence": "community",
+      "city": "Mexico",
+      "description": "Étape mexicaine de 2014 (date communautaire).",
+      "engineId": "unity-android-native",
+      "engineVersion": "0.0.0",
+      "assets": [],
+      "assetIndex": null,
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": false,
+        "desktop": false,
+        "touch": false,
+        "keyboard": false
+      },
+      "status": "unavailable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Build Android native (Unity) : un APK ne s'exécute pas dans un navigateur.",
+        "Aucune build web ni ressource autorisée n'est fournie à ce launcher."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#f43f5e",
+        "to": "#4c0519",
+        "label": "Mexico"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-wt-vancouver-2014",
+      "title": "World Tour : Vancouver",
+      "kind": "official",
+      "year": 2014,
+      "releaseDate": null,
+      "dateConfidence": "community",
+      "city": "Vancouver",
+      "description": "Étape canadienne de 2014 (date communautaire).",
+      "engineId": "unity-android-native",
+      "engineVersion": "0.0.0",
+      "assets": [],
+      "assetIndex": null,
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": false,
+        "desktop": false,
+        "touch": false,
+        "keyboard": false
+      },
+      "status": "unavailable",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Build Android native (Unity) : un APK ne s'exécute pas dans un navigateur.",
+        "Aucune build web ni ressource autorisée n'est fournie à ce launcher."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#38bdf8",
+        "to": "#0c4a6e",
+        "label": "Vancouver"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    },
+    {
+      "id": "ss-web-build-slot",
+      "title": "Emplacement build web autorisée",
+      "kind": "official",
+      "year": 2026,
+      "releaseDate": null,
+      "dateConfidence": "community",
+      "city": "À fournir",
+      "description": "Emplacement prêt pour une build WebGL officielle et autorisée. Ajoutez le moteur et l'index de ressources signé pour l'activer.",
+      "engineId": "webgl-generic",
+      "engineVersion": "1.0.0",
+      "assets": [],
+      "assetIndex": "engines/webgl-generic/integrity.json",
+      "supportedMods": [],
+      "compatibility": {
+        "mobile": true,
+        "desktop": true,
+        "touch": true,
+        "keyboard": true
+      },
+      "status": "missing-assets",
+      "recommendedGraphics": "auto",
+      "incompatibilities": [
+        "Aucune build n'est déposée dans public/engines/webgl-generic/."
+      ],
+      "thumbnail": {
+        "kind": "gradient",
+        "from": "#334155",
+        "to": "#0f172a",
+        "label": "WebGL"
+      },
+      "screenshots": [],
+      "manifestVersion": 1,
+      "updatedAt": "2026-10-31"
+    }
+  ]
+}

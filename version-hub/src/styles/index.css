@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+[data-theme='dark'] {
+  --bg: 9 11 18;
+  --surface: 17 20 31;
+  --raised: 26 30 45;
+  --line: 44 50 72;
+  --ink: 236 239 248;
+  --muted: 150 158 184;
+  --accent: 255 79 139;
+  --accent2: 255 207 63;
+  --ok: 52 211 153;
+  --warn: 251 191 36;
+  --bad: 248 113 113;
+  color-scheme: dark;
+}
+[data-theme='light'] {
+  --bg: 244 245 250;
+  --surface: 255 255 255;
+  --raised: 236 238 246;
+  --line: 214 218 232;
+  --ink: 17 20 31;
+  --muted: 88 96 122;
+  --accent: 214 36 102;
+  --accent2: 180 120 0;
+  --ok: 4 140 92;
+  --warn: 170 110 0;
+  --bad: 200 40 40;
+  color-scheme: light;
+}
+
+@layer base {
+  html { -webkit-tap-highlight-color: transparent; }
+  body {
+    @apply bg-bg text-ink antialiased;
+    min-height: 100dvh;
+    background-image: radial-gradient(1200px 600px at 85% -10%, rgb(var(--accent) / 0.12), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, rgb(var(--accent2) / 0.08), transparent 60%);
+    background-attachment: fixed;
+  }
+  :focus-visible { outline: 2px solid rgb(var(--accent2)); outline-offset: 2px; border-radius: 10px; }
+  ::selection { background: rgb(var(--accent) / 0.35); }
+}
+
+@layer components {
+  .card { @apply rounded-2xl border border-line/70 bg-surface/90 shadow-card; }
+  .btn {
+    @apply inline-flex min-h-[44px] select-none items-center justify-center gap-2 rounded-xl px-4 text-sm font-semibold
+      transition-[transform,background-color,box-shadow,opacity] duration-150 active:scale-[.97] disabled:cursor-not-allowed disabled:opacity-45 disabled:active:scale-100;
+  }
+  .btn-primary { @apply btn bg-accent text-white hover:shadow-glow; }
+  .btn-ghost { @apply btn border border-line bg-raised/60 text-ink hover:bg-raised; }
+  .btn-danger { @apply btn border border-bad/50 bg-bad/10 text-bad hover:bg-bad/20; }
+  .chip { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold; }
+  .input {
+    @apply min-h-[44px] w-full rounded-xl border border-line bg-raised/70 px-3 text-sm text-ink placeholder:text-muted
+      focus:border-accent focus:outline-none;
+  }
+  .label { @apply mb-1 block text-xs font-semibold uppercase tracking-wider text-muted; }
+  .page { @apply mx-auto w-full max-w-6xl animate-fade-up px-4 pb-28 pt-5 md:px-8 md:pb-12 md:pt-8; }
+  .h1 { @apply text-2xl font-extrabold tracking-tight md:text-3xl; }
+  .h2 { @apply text-lg font-bold tracking-tight; }
+  .skeleton { @apply animate-shimmer rounded-2xl bg-[length:200%_100%]; background-image: linear-gradient(90deg, rgb(var(--raised)) 0%, rgb(var(--line)) 50%, rgb(var(--raised)) 100%); }
+}
+
+.svh-engine-frame { position: absolute; inset: 0; border: 0; display: block; background: #000; }
+
+.overlay-scanlines { background: repeating-linear-gradient(to bottom, rgb(0 0 0 / 0.9) 0 1px, transparent 1px 3px); }
+.overlay-vignette { background: radial-gradient(ellipse at center, transparent 55%, rgb(0 0 0 / 0.95) 100%); }
+.overlay-letterbox { background: linear-gradient(to bottom, #000 0 11%, transparent 11% 89%, #000 89% 100%); }
+
+/* Réduction des animations : préférence système, ou forçage depuis les réglages. */
+@media (prefers-reduced-motion: reduce) {
+  html:not([data-motion='on']) *, html:not([data-motion='on']) *::before, html:not([data-motion='on']) *::after {
+    animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important;
+  }
+}
+html[data-motion='off'] *, html[data-motion='off'] *::before, html[data-motion='off'] *::after {
+  animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important;
+}
